@@ -1,0 +1,72 @@
+/**
+ ** ********************************************************
+ ** @file animation.css
+ ** @author WenKang Lin <wenkanglin0910@gmail.com>
+ ** @date 2018-04-12 14:58:29
+ ** @last_modified_by WenKang Lin <wenkanglin0910@gmail.com>
+ ** @last_modified_date 2018-04-12 14:58:40
+ ** @copyright (c) 2018-present, WenKang Lin
+ ** ********************************************************
+ */
+
+/* =============================================
+=            fade enter transition             =
+============================================= */
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: all 0.3s;
+}
+
+/* =====  End of fade enter transition  ====== */
+
+/* =============================================
+=               fade up transition             =
+============================================= */
+
+.fade-up-enter-active {
+  animation: fade-up-in 0.3s;
+}
+
+.fade-up-leave-active {
+  animation: fade-up-in 0.3s reverse;
+}
+
+@keyframes fade-up-in {
+  0% {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+/* =======  End of fade up transition  ======= */
+
+/* =============================================
+=            fade down transition              =
+============================================= */
+
+.fade-down-enter {
+  transform: translate3d(0, -10px, 0);
+  opacity: 0;
+}
+
+.fade-down-enter-active,
+.fade-down-leave-active {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.fade-down-leave-to {
+  transform: translate3d(0, 10px, 0);
+  opacity: 0;
+}
+
+/* =====  End of fade down transition  ====== */

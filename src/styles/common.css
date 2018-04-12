@@ -1,0 +1,30 @@
+/**
+ ** ********************************************************
+ ** @file common.css
+ ** @author WenKang Lin <wenkanglin0910@gmail.com>
+ ** @date 2018-04-12 14:58:50
+ ** @last_modified_by WenKang Lin <wenkanglin0910@gmail.com>
+ ** @last_modified_date 2018-04-12 14:58:51
+ ** @copyright (c) 2018-present, WenKang Lin
+ ** ********************************************************
+ */
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}

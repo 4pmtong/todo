@@ -1,0 +1,45 @@
+<!--
+  -- --------------------------------------------------------
+  -- @file index.html
+  -- @author WenKang Lin <wenkanglin0910@gmail.com>
+  -- @date 2018-04-12 15:04:25
+  -- @last_modified_by WenKang Lin <wenkanglin0910@gmail.com>
+  -- @last_modified_date 2018-04-12 15:04:27
+  -- @copyright (c) 2018-present, WenKang Lin
+  -- --------------------------------------------------------
+ -->
+
+ <!DOCTYPE html>
+ <html lang="zh-cmn-Hans">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta
+     name="viewport"
+     content="width=device-width, initial-scale=1.0, minimal-ui">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+   <link rel="apple-touch-icon" sizes="120x120" href="/public/logo-120.png">
+   <link rel="shortcut icon" sizes="48x48" href="/public/logo-48.png">
+   <meta name="theme-color" content="#2586ef">
+   {{{ meta }}}
+   <link rel="manifest" href="/manifest.json">
+   <title>{{ title }}</title>
+   {{{ renderWebpackDllHints() }}}
+   {{{ renderResourceHints() }}}
+   {{{ renderStyles() }}}
+ </head>
+
+ <body>
+
+   <!--vue-ssr-outlet-->
+
+   {{{ renderState() }}}
+   {{{ renderWebpackDll() }}}
+   {{{ renderScripts() }}}
+
+ </body>
+
+ </html>
