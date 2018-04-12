@@ -1,0 +1,147 @@
+/**
+ ** ********************************************************
+ ** @file reset.css
+ ** @author WenKang Lin <wenkanglin0910@gmail.com>
+ ** @date 2018-04-12 14:59:05
+ ** @last_modified_by WenKang Lin <wenkanglin0910@gmail.com>
+ ** @last_modified_date 2018-04-12 14:59:06
+ ** @copyright (c) 2018-present, WenKang Lin
+ ** ********************************************************
+ */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: -apple-system, 'PingFang SC', 'Helvetica Neue', 'Helvetica',
+    'Arial', 'Lantinghei SC', 'Hiragino Sans GB', 'Source Han Sans CN',
+    'Source Han Sans SC', 'Microsoft YaHei', 'Wenquanyi Micro Hei',
+    'WenQuanYi Zen Hei', 'ST Heiti', 'SimHei', 'WenQuanYi Zen Hei Sharp',
+    sans-serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+body,
+hr,
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+pre {
+  margin: 0;
+}
+
+input,
+textarea,
+ul,
+ol,
+button,
+th,
+td {
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+textarea {
+  padding: 6px 12px;
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+  vertical-align: top;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button,
+input[type='button'],
+input[type='submit'] {
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+hr {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:hover {
+  outline: none;
+}
+
+img {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button[disabled],
+input[type='button'][disabled],
+input[type='submit'][disabled] {
+  cursor: not-allowed;
+}
+
+pre {
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
