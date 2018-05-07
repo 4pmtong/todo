@@ -2,42 +2,35 @@
   "name": "aldnoah-ssr",
   "version": "0.0.1",
   "description": "A scaffold based on vue and webpack for ssr project",
-  "repository": "git@github.com:wenkanglin/aldnoah-ssr.git",
+  "repository": "git@github.com:4pmtong/todo.git",
   "author": "WenKang Lin <wenkanglin0910@gmail.com>",
   "license": "MIT",
-  "keywords": ["scaffold", "vue", "webpack", "vue-ssr", "aldnoah"],
+  "keywords": [
+    "scaffold",
+    "vue",
+    "webpack",
+    "vue-ssr",
+    "aldnoah"
+  ],
   "engines": {
     "node": "8.9.4",
     "npm": "5.6.0"
   },
   "scripts": {
-    "version:check":
-      "node -r ./launcher/utils/error-handler ./launcher/commands/version-check",
-    "data:move":
-      "node -r ./launcher/utils/error-handler ./launcher/commands/data-move",
-    "dll:dev":
-      "cross-env NODE_ENV=development node -r ./launcher/utils/error-handler ./launcher/commands/dll-dev",
-    "dll:build":
-      "cross-env NODE_ENV=production node -r ./launcher/utils/error-handler ./launcher/commands/dll-prod",
-    "build:clean":
-      "node -r ./launcher/utils/error-handler ./launcher/commands/build-clean",
-    "build:client":
-      "node -r ./launcher/utils/error-handler ./launcher/commands/build-client",
-    "build:server":
-      "node -r ./launcher/utils/error-handler ./launcher/commands/build-server",
-    "server:dev":
-      "cross-env NODE_ENV=development node -r ./launcher/utils/error-handler ./launcher/server/app-dev",
-    "server:build":
-      "cross-env NODE_ENV=production node -r ./launcher/utils/error-handler ./launcher/server/app-prod",
+    "version:check": "node -r ./launcher/utils/error-handler ./launcher/commands/version-check",
+    "data:move": "node -r ./launcher/utils/error-handler ./launcher/commands/data-move",
+    "dll:dev": "cross-env NODE_ENV=development node -r ./launcher/utils/error-handler ./launcher/commands/dll-dev",
+    "dll:build": "cross-env NODE_ENV=production node -r ./launcher/utils/error-handler ./launcher/commands/dll-prod",
+    "build:clean": "node -r ./launcher/utils/error-handler ./launcher/commands/build-clean",
+    "build:client": "node -r ./launcher/utils/error-handler ./launcher/commands/build-client",
+    "build:server": "node -r ./launcher/utils/error-handler ./launcher/commands/build-server",
+    "server:dev": "cross-env NODE_ENV=development node -r ./launcher/utils/error-handler ./launcher/server/app-dev",
+    "server:build": "cross-env NODE_ENV=production node -r ./launcher/utils/error-handler ./launcher/server/app-prod",
     "dev": "npm run dll:dev && npm run server:dev",
-    "build":
-      "npm run build:clean && npm run dll:build && run-p data:move build:client build:server",
-    "analyse":
-      "npm run build:clean && node -r ./launcher/utils/error-handler ./launcher/commands/analyse",
-    "deploy":
-      "npm run version:check && npm run build && pm2 start pm2.config.js",
-    "deploy:test":
-      "npm run version:check && npm run build && pm2 start pm2.config.js --env test"
+    "build": "npm run build:clean && npm run dll:build && run-p data:move build:client build:server",
+    "analyse": "npm run build:clean && node -r ./launcher/utils/error-handler ./launcher/commands/analyse",
+    "deploy": "npm run version:check && npm run build && pm2 start pm2.config.js",
+    "deploy:test": "npm run version:check && npm run build && pm2 start pm2.config.js --env test"
   },
   "dependencies": {
     "axios": "0.18.0",
