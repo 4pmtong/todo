@@ -1,9 +1,9 @@
 {
-  "name": "aldnoah-ssr",
+  "name": "todo",
   "version": "0.0.1",
-  "description": "A scaffold based on vue and webpack for ssr project",
+  "description": "A app to do something",
   "repository": "git@github.com:4pmtong/todo.git",
-  "author": "WenKang Lin <wenkanglin0910@gmail.com>",
+  "author": "4pmtong <web_chentong@163.com>",
   "license": "MIT",
   "keywords": [
     "scaffold",
